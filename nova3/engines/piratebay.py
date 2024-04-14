@@ -88,7 +88,8 @@ class piratebay(object):
                 'seeds': result['seeders'],
                 'leech': result['leechers'],
                 'engine_url': self.url,
-                'desc_link': self.url + '/description.php?id=' + result['id']
+                'desc_link': self.url + '/description.php?id=' + result['id'],
+                'date': result['added'],
             }
             prettyPrinter(res)
 
