@@ -89,7 +89,7 @@ class piratebay(object):
                 'leech': result['leechers'],
                 'engine_url': self.url,
                 'desc_link': self.url + '/description.php?id=' + result['id'],
-                'date': result['added'],
+                'pub_date': result['added'],
             }
             prettyPrinter(res)
 
