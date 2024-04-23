@@ -68,7 +68,8 @@ class torrentscsv(object):
                    'seeds': result['seeders'],
                    'leech': result['leechers'],
                    'engine_url': self.url,
-                   'desc_link': desc_url}
+                   'desc_link': desc_url,
+                   'pub_date': result['created_unix']}
             prettyPrinter(res)
 
     def download_link(self, result):
